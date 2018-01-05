@@ -1,7 +1,4 @@
-#Challenges!
+#Because who doesn't want to do 100 of something?!
 
-x=5476
-y=572
-
-print("The quotient of"),(x),("and"),(y),("is"),(x//y), \
-("with a remainder of"),(x%y),(".")
+for i in range(100):
+	print("Hello World!")
