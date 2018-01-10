@@ -145,3 +145,106 @@ print(equ)
 
 >> 'All @nim@als @re equ@l.'
 
+#Finding an index
+#The index method gets the index of the first occurence of a character in a string.
+#Pass the character you're looking for as a parameter.
+
+"animals".index("m")
+>> 3
+
+#Python returns a ValueError exception if no match is found.
+#Use exception handling if you're not sure a match will exist.
+
+try:
+	"animals".index("z")
+except:
+	print("Not found.")
+
+>> Not found.
+
+#In
+#The in keyword checks if a string is in another string.
+#It returns either True or False.
+
+"Cat" in "Cat in the Hat."
+
+>> True
+
+"Bat" in "Cat in the Hat"
+
+>> False
+
+#Put the keyword not in front of in to check if one string is not in another string.
+
+"Potter" not in "Harry"
+
+>> True
+
+#Escaping Strings!
+#If you use quotes inside a string, you get a syntax error.
+#Fix this error by prefacing quotes with backslashes.
+
+"She said "Surely"" >> SyntaxError
+
+"She said \"Surely\"" >> She said "Surely"
+
+#Escaping a string means putting a symbol in front of a character that normnally 
+#has a special meaning in Python. Python uses a backslash for escaping.
+# You don't need to escape single quotes inside of a string of double quotes.
+
+"She said 'Surely'" >> She said 'Surely'
+
+#Double quotes can also be used inside single quotes.
+
+'She said "Surely"' >> She said 'Surely'
+
+#Newline!
+#Putting \n inside a string represents a newline.
+
+print("line1\nline2\nline3")
+
+>>line1
+>>line2
+>>line3
+
+#Slicing
+#Slicing is a way to return a new iterable from a subset of items in another iterable. 
+#The syntax for slicing is [iterable][[start_index:end_index]]
+#Example: How to slice a list:
+
+fict = ["Tolstoy","Camus","Orwell","Huxley","Austin"]
+fict[0:3]
+>> "Tolstoy", "Camus", "Orwell"
+
+#The start index includes the item at that index, 
+#but the end index includes the item before the end index.
+
+#Example of slicing a string:
+
+ivan = "In place of death there was light."
+ivan[0:17]
+ivan[17:33]
+
+>> "In place of death"
+>> " there was light"
+
+#If the start index is 0, it can be left blank.
+
+ivan = "In place of death there was light."
+ivan[:17]
+
+>> "In place of death"
+
+#If the end index is the last item, you can leave the end index empty.
+
+ivan = "In place of death there was light."
+ivan[17:]
+
+>> " there was light."
+
+#Leaving both the start and end index empty returns the entire iterable.
+
+ivan = "In place of death there was light."
+ivan[:]
+
+>> "In place of death there was light."
