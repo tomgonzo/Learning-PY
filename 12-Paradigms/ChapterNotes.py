@@ -182,7 +182,7 @@ orange.rot(10,98) #rot accepts two parameters, days since picked, and average te
 class Rectangle():
 	def __init__(self, w, l):
 		self.width = w
-		self.len = 1
+		self.len = l
 
 	def area(self): #method to return the area of the rectangle
 		return self.width * self.len
