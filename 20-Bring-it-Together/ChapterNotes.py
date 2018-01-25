@@ -26,3 +26,13 @@
 
 #With this knowledge, let's build a web scraper!
 
+### Scraping Google News ###
+
+#The scraper will fetch all Google News stores by extracting the <a></a> tags
+#from Google News' HTML. Google News uses these tags to link to the different
+#sites that make up the site. The scraper will collect the URLs for the
+#stories Google News is displaying. 
+
+#The BeautifulSoup module will parse Google News HTML. Parsing means taking
+#a format like HTML and giving it structure. Begin by installing BeautifulSoup.
+
